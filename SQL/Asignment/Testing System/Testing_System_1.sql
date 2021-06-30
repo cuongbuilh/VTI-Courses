@@ -11,7 +11,7 @@ create table Department
 create table Position
 (
     PositionID   int unsigned auto_increment primary key,
-    PositionName varchar(20)
+    PositionName varchar(30)
 );
 
 create table Account
@@ -19,7 +19,7 @@ create table Account
     AccountID    int unsigned auto_increment primary key,
     Email        char(32) not null unique,
     Username     char(32) not null unique,
-    FullName     char(12),
+    FullName     char(50),
     DepartmentID int unsigned,
     PositionID   int unsigned,
     CreateDate   date default (curdate())
