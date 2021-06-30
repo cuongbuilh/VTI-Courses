@@ -5,7 +5,7 @@ use Testing_System_Asignment_1;
    - this constraint make database more relative
 
 alter table Account
-    add constraint foreign key (DepartmentID) references Department (DepartmentID);
+    add constraint constraint_name foreign key (DepartmentID) references Department (DepartmentID);
 
 alter table
 */
@@ -47,7 +47,8 @@ values (1, 1, curdate()),
        (1, 2, curdate()),
        (1, 3, curdate()),
        (1, 4, curdate()),
-       (1, 5, curdate());
+       (1, 5, curdate()),
+       (2, 4, curdate());
 
 insert into TypeQuestion(TypeName)
 values ('trac ngiem'),
