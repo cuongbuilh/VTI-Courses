@@ -85,4 +85,4 @@ create table ExamQuestion
 (
     ExamID     int unsigned,
     QuestionID int unsigned
-)
+);
