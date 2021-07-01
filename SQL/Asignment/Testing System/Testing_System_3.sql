@@ -197,7 +197,7 @@ set Exam.Duration=90;
 select *
 from Exam
 where Exam.Duration >= 60
-  and CreateDate < '2019-12-20'
+  and CreateDate < '2019-12-20';
 
 -- Q9 lay 5group tao gam nhat
 select *
