@@ -95,6 +95,19 @@ where numOfMember = @minNum;
 drop temporary table temp_table;
 set @minNum = null;
 
+-- q10 with cte
+with PositionCount(PositionID, numOfMember)
+         as (select P.PositionID, count(AccountID) as numOfMember
+             from Position P
+                      inner join Account A2 on P.PositionID = A2.PositionID
+             group by P.PositionID
+    )
+select *
+from Position P
+         inner join PositionCount PC on P.PositionID = PC.PositionID
+where numOfMember = (select max(numOfMember) from PositionCount);
+
+
 -- q11
 select D.DepartmentID, PositionName, count(AccountID) as 'so luong'
 from Department D
