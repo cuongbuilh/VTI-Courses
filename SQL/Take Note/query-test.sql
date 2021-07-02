@@ -57,11 +57,88 @@ with cte_department(id)
         select departmentid as id
         from Department
     )
-select * from cte_department;
+select *
+from cte_department;
 
 -- temporary table
 drop temporary table if exists tmp_table;
 create temporary table tmp_table
-as select * from Department;
-select * from tmp_table;
+as
+select *
+from Department;
+select *
+from tmp_table;
 --
+show databases;
+--
+use Testing_System;
+show table status;
+
+use master;
+create database test;
+use test;
+CREATE table unique_tbl
+(
+    uq int unique
+);
+
+insert into unique_tbl(uq)
+values (null);
+select *
+from unique_tbl;
+--
+
+use Testing_System;
+show tables;
+
+select *
+from Question Q,
+     Answer A
+where A.QuestionID = Q.QuestionID;
+
+select *
+from Question Q
+         cross join Answer A;
+-- on Q.QuestionID = A.QuestionID;
+
+
+--
+use test;
+create table a
+(
+    a int
+);
+create table b
+(
+    a int
+);
+
+insert into a
+values (1),
+       (2),
+       (3),
+       (4),
+       (5);
+insert into b
+values (6),
+       (7),
+       (8),
+       (4),
+       (5);
+
+select *
+from a
+union
+select *
+from b;
+
+
+select *
+from a
+union all
+select *
+from b;
+
+--
+select * from a;
+select * from a where exists ( select * from b);

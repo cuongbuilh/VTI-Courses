@@ -1,5 +1,5 @@
 use Testing_System_Asignment_1;
-
+use Testing_System;
 -- ## ex1
 -- q1
 select *
@@ -15,7 +15,7 @@ where CreateDate > '2010-12-20';
 select *
 from Account
          inner join Position P on Account.PositionID = P.PositionID
-where PositionName = 'Developer';
+where PositionName like '%Dev%';
 
 -- q4
 select D.DepartmentID, D.DepartmentName, count(AccountID) as 'số nhân viên'
