@@ -142,3 +142,30 @@ from b;
 --
 select * from a;
 select * from a where exists ( select * from b);
+
+--
+use test;
+
+-- test proceduree
+delimiter //
+create procedure helloSql()
+begin
+    select 'my sql';
+end //
+delimiter ;
+
+call helloSql();
+--
+-- create sum procedure
+delimiter //
+create procedure sumInt(in a int, in b int, out c int)
+begin
+    set c = a+b;
+    select c;
+end //
+delimiter ;
+
+set @a=0;
+call sumInt(1,1,@a);
+select @a;
+set

@@ -116,6 +116,10 @@ from Department D
 where PositionName in ('dev', 'test', 'scrum master', 'pm')
 group by A.DepartmentID, PositionName;
 
+select positionname
+from Position;
+
+
 -- q12
 select Q.QuestionID,
        Q.Content,
@@ -178,3 +182,12 @@ from `Group` G
 group by G.GroupID
 having count(AccountID) < 7;
 
+--
+delimiter //
+create function f_tong(a int, b int) returns int
+begin
+    return (a+b);
+end //
+delimiter ;
+set @a = f_tong(1,2);
+select @a;
