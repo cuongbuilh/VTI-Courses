@@ -168,4 +168,7 @@ delimiter ;
 set @a=0;
 call sumInt(1,1,@a);
 select @a;
-set
+
+
+set @date = DATE('2010-12-02');
+select timestampdiff(year,@date,curdate())>3;

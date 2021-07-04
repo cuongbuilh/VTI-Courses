@@ -75,21 +75,214 @@ select TypeName
 from TypeQuestion
 where TypeID = @a;
 
-set @a=null;
+set @a = null;
 
 -- q6
 delimiter //
 drop procedure if exists sp_find_by_name;
-create procedure sp_find_by_name(in keyword char(50)) begin
-    select  GroupID as ID, GroupName as Name from `Group` G where GroupName like concat('%',keyword,'%')
+create procedure sp_find_by_name(in keyword char(50))
+begin
+    select GroupID as ID, GroupName as Name
+    from `Group` G
+    where GroupName like concat('%', keyword, '%')
     union
-    select AccountID as ID, FullName as Name from Account where FullName like concat('%',keyword,'%');
+    select AccountID as ID, FullName as Name
+    from Account
+    where FullName like concat('%', keyword, '%');
 end //
 delimiter ;
 
 call sp_find_by_name('a');
 
 -- q7
+delimiter //
+drop procedure if exists sp_create_acc;
+create procedure sp_create_acc(in full_name varchar(50), in email_in varchar(50))
+begin
+    declare user_name char(50);
+    declare position_id int;
+    select PositionID into position_id from Position where PositionName like '%dev%' limit 1;
+    set user_name = substring_index(email_in, '@', 1);
+    insert into Account(email, username, fullname, PositionID, createdate)
+    values (email_in, user_name, full_name, position_id, curdate());
+    select 'thanh cong';
+end //
+delimiter ;
 
-
+delete
+from Account
+where Email = 'cuongbuilh@gmail.com';
+call sp_create_acc('bui van cuong', 'cuongbuilh@gmail.com');
+select *
+from Account
+where Email = 'cuongbuilh@gmail.com';
 #-- -------------------------------------
+set @str = 'asdfds@gmail.com';
+select substring_index(@str, '@', 1);
+-- ------
+
+
+-- q8
+delimiter //
+drop procedure if exists sp_max_content;
+create procedure sp_max_content(in keyword enum ('essay','multiple-choice'))
+begin
+    declare max_length int;
+    set max_length = (select max(character_length(Content))
+                      from Question
+                               join TypeQuestion TQ on Question.TypeID = TQ.TypeID
+                      where TypeName like concat('%', keyword, '%'));
+
+    select character_length(Content) as ContentLength,
+           TypeName,
+           QuestionID,
+           Content,
+           CategoryID,
+           Q.TypeID,
+           CreatorID,
+           CreateDate
+    from Question Q
+             join TypeQuestion T on Q.TypeID = Q.TypeID
+    where TypeName like concat('%', keyword, '%')
+      and character_length(Content) = max_length;
+end //
+delimiter ;
+
+call sp_max_content('essay');
+
+
+-- q9
+delimiter //
+drop procedure if exists sp_delete_exam_by_id;
+create procedure sp_delete_exam_by_id(in exam_id int unsigned)
+begin
+    if exists(select * from Exam where ExamID = exam_id)
+    then
+        begin
+            delete from Exam where ExamID = exam_id;
+        end;
+    end if;
+end //
+delimiter ;
+
+begin work;
+select *
+from Exam;
+call sp_delete_exam_by_id(9);
+rollback;
+
+
+-- q10
+delimiter //
+drop procedure if exists sp_delete_old_exam;
+create procedure sp_delete_old_exam()
+begin
+    declare done int default false;
+    declare num_of_del int unsigned;
+    declare _id int unsigned;
+    declare _date date;
+    declare cur cursor for select ExamID, CreateDate from Exam;
+    declare continue handler for not found set done = true;
+
+    set num_of_del = 0;
+
+    open cur;
+    read_loop:
+    loop
+        fetch cur into _id,_date;
+        -- leave loop
+        if done then
+            leave read_loop;
+        end if;
+        -- check date
+        if timestampdiff(year, _date, curdate()) >= 3 then
+            call sp_delete_exam_by_id(_id);
+            set num_of_del = num_of_del + 1;
+        end if;
+    end loop;
+    close cur;
+    select num_of_del;
+end //
+delimiter ;
+
+insert into Exam(createdate)
+VALUES ('2009-12-12');
+begin work;
+select *
+from Exam;
+call sp_delete_old_exam();
+rollback;
+
+
+-- q11
+delimiter //
+drop procedure if exists sp_delete_department;
+create procedure sp_delete_department(in department_name varchar(50))
+begin
+    declare _departmentID int unsigned;
+    select DepartmentId
+    into _departmentID
+    from Department
+    where DepartmentName = department_name
+    limit 1;
+
+    if (_departmentID is not null) then
+        update Account set DepartmentId=null where DepartmentId = _departmentID;
+        delete from Department where DepartmentID = _departmentID;
+    end if;
+
+end //
+
+begin work;
+call sp_delete_department('Phòng Sale');
+select *
+from Department;
+select FullName, DepartmentID
+from Account;
+rollback;
+
+
+-- q12
+delimiter //
+drop procedure if exists sp_show_created_question_in_year;
+create procedure sp_show_created_question_in_year()
+begin
+    declare cur_month int default 1;
+    declare _name varchar(50) default ('');
+    declare _num int unsigned default (0);
+
+    create temporary table result
+    (
+        month_name    varchar(50),
+        numOfQuestion int unsigned default 0
+    );
+
+    month_loop :
+    loop
+        if (cur_month > 12 or cur_month < 1) then
+            leave month_loop;
+        end if;
+        -- create name
+        set _name = concat('thang ', cur_month);
+        -- count num
+        select count(QuestionID)
+        into _num
+        from Question
+        where year(CreateDate) = year(curdate())
+          and month(CreateDate) = cur_month;
+        -- insert result
+        insert into result values (_name, _num);
+        -- select _name,_num;
+        set cur_month = cur_month + 1;
+    end loop;
+
+    select _name as title, _num as number from result;
+    drop temporary table result;
+end //
+delimiter //
+
+
+call sp_show_created_question_in_year();
+
+insert into Question(CreateDate, CreatorID)
+values (curdate(), 1);
