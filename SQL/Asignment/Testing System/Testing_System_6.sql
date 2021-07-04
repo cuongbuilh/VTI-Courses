@@ -243,6 +243,9 @@ rollback;
 
 
 -- q12
+insert into Question(CreateDate, CreatorID)
+values (curdate(), 1);
+
 delimiter //
 drop procedure if exists sp_show_created_question_in_year;
 create procedure sp_show_created_question_in_year()
@@ -273,7 +276,7 @@ begin
         where year(CreateDate) = year(curdate())
           and month(CreateDate) = cur_month;
         -- insert result
-         insert into result value (_name, _num);
+        insert into result value (_name, _num);
         -- select _name,_num;
         set cur_month = cur_month + 1;
     end loop;
@@ -286,5 +289,55 @@ delimiter //
 
 call sp_show_created_question_in_year();
 
-insert into Question(CreateDate, CreatorID)
-values (curdate(), 1);
+
+
+-- q13
+-- select date_sub(curdate(),interval 1 month );
+delimiter //
+drop procedure if exists sp_six_months;
+create procedure sp_six_months()
+begin
+    declare curr_date date;
+    declare step_date date;
+    declare iter int default 0;
+    declare _title nvarchar(50);
+    declare _result nvarchar(50);
+    declare _num int;
+    set curr_date = current_date();
+
+    drop temporary table if exists result;
+    create temporary table result
+    (
+        title  nvarchar(50),
+        result nvarchar(50)
+    );
+
+    set iter = 0;
+    while iter < 6
+        do
+            set step_date = subdate(curr_date, interval iter month);
+            set _title = concat('date: ', month(step_date), ' - ', year(step_date));
+
+            set _num = (select count(QuestionID)
+                        from Question
+                        where year(CreateDate) = year(curr_date)
+                          and month(CreateDate) = month(step_date));
+
+
+            set _result = case _num
+                              when 0 then 'không có câu hỏi nào trong tháng'
+                              else _num
+                end;
+
+            insert into result values (_title, _result);
+            set iter = iter + 1;
+        end while;
+
+    select title as tiltle, result as result from result;
+    drop temporary table if exists result;
+end //
+delimiter ;
+
+call sp_six_months();
+
+
