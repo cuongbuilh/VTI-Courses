@@ -143,13 +143,11 @@ where TypeName in ('tự luận', 'trắc nghiệm')
 group by TQ.TypeID;
 
 -- q14 15
-select G.GroupID, GroupName, count(AccountID) as 'so luong'
+select distinct G.GroupID, GroupName
 from `Group` G
          left join GroupAccount GA on G.GroupID = GA.GroupID
-where G.GroupID not in (select G1.GroupID
-                        from `Group` G1
-                                 join GroupAccount A on G1.GroupID = A.GroupID)
-group by G.GroupID;
+where AccountID is null;
+
 
 -- q16
 select *
@@ -186,8 +184,8 @@ having count(AccountID) < 7;
 delimiter //
 create function f_tong(a int, b int) returns int
 begin
-    return (a+b);
+    return (a + b);
 end //
 delimiter ;
-set @a = f_tong(1,2);
+set @a = f_tong(1, 2);
 select @a;
