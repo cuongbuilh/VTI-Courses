@@ -250,10 +250,12 @@ begin
     declare cur_month int default 1;
     declare _name varchar(50) default ('');
     declare _num int unsigned default (0);
+    declare continue handler for not found set cur_month = -1;
 
+    drop temporary table if exists result;
     create temporary table result
     (
-        month_name    varchar(50),
+        month_name    nvarchar(50),
         numOfQuestion int unsigned default 0
     );
 
@@ -263,7 +265,7 @@ begin
             leave month_loop;
         end if;
         -- create name
-        set _name = concat('thang ', cur_month);
+        set _name = concat('tháng  ', cur_month);
         -- count num
         select count(QuestionID)
         into _num
@@ -271,13 +273,13 @@ begin
         where year(CreateDate) = year(curdate())
           and month(CreateDate) = cur_month;
         -- insert result
-        insert into result values (_name, _num);
+         insert into result value (_name, _num);
         -- select _name,_num;
         set cur_month = cur_month + 1;
     end loop;
 
-    select _name as title, _num as number from result;
-    drop temporary table result;
+    select month_name as title, numOfQuestion as number from result;
+    drop temporary table if exists result;
 end //
 delimiter //
 
