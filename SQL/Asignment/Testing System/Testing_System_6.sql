@@ -148,7 +148,7 @@ begin
 end //
 delimiter ;
 
-call sp_max_content('essay');
+call sp_max_content('multiple-choice');
 
 
 -- q9
