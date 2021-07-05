@@ -42,8 +42,7 @@ select *
 from Question
 where character_length(Content) > 300;
 
-delete
-from v_long_content;
+drop view v_long_content;
 
 select *
 from v_account_join_most_group;
