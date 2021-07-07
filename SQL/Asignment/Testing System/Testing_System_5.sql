@@ -40,9 +40,16 @@ from v_account_join_most_group;
 create or replace view v_long_content as
 select *
 from Question
-where character_length(Content) > 300;
+where character_length(Content) > 10;
 
 drop view v_long_content;
+
+begin work ;
+delete  from v_long_content;
+select * from v_long_content;
+select * from Question;
+rollback ;
+
 
 select *
 from v_account_join_most_group;

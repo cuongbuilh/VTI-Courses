@@ -20,7 +20,7 @@ begin
 end //
 delimiter ;
 
-call sp_show_account_in_department('dev 2');
+call sp_show_account_in_department('dev');
 
 -- q2
 delimiter //
@@ -341,3 +341,10 @@ delimiter ;
 call sp_six_months();
 
 
+##
+delimiter //
+create procedure sp_test(out a int)
+begin
+    select AccountId into a from Account;
+end //
+delimiter ;
