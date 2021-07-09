@@ -320,7 +320,7 @@ begin
 
             set _num = (select count(QuestionID)
                         from Question
-                        where year(CreateDate) = year(curr_date)
+                        where year(CreateDate) = year(step_date)
                           and month(CreateDate) = month(step_date));
 
 
