@@ -172,3 +172,5 @@ select @a;
 
 set @date = DATE('2010-12-02');
 select timestampdiff(year,@date,curdate())>3;
+
+##
