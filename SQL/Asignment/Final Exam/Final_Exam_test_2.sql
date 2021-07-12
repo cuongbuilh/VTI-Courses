@@ -78,8 +78,8 @@ group by d.madt, tendt;
 -- check ket qua -> dung view sinhvieninfo sau
 
 -- 3 : view sinhvien info
-create or replace view sinhvieninfo (ma_so, ho_ten, ten_de_tai, so_de_tai) as
-select s.masv, s.hoten, d.tendt, case when count(id)=0 then 'khong co de tai nao' else count(id) end
+create or replace view sinhvieninfo (ma_so, ho_ten, ten_de_tai) as
+select s.masv, s.hoten, case when tendt is null then 'khong co de tai nao' else tendt end
 from sinhvien s
          left join huongdan h on s.masv = h.masv
          left join detai d on h.madt = d.madt
