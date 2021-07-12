@@ -17,7 +17,7 @@ create table sinhvien
 (
     masv    int primary key auto_increment,
     hoten   varchar(50),
-    namsinh int,
+    namsinh tinyint unsigned,
     quequan varchar(100)
 );
 
