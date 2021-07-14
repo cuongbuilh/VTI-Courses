@@ -2,6 +2,8 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Asignment/Extra Assignment/Extra Asignment 1_2.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Asignment/Final Exam/FinalExam_test.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Asignment/Final Exam/Final_Exam_test_2.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Asignment/TS-KEY/TestingSystem_Answers_By_NTC.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Asignment/Testing System/Testing_System_1.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Asignment/Testing System/Testing_System_2.sql" dialect="Oracle" />
