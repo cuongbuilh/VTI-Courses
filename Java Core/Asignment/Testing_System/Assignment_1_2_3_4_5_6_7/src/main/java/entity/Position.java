@@ -2,7 +2,10 @@ package entity;
 
 public class Position {
     private int positionID;
-    private String positionName;public Position(){}
+    private String positionName;
+
+    public Position() {
+    }
 
     @Override
     public String toString() {

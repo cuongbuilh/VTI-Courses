@@ -1,43 +1,55 @@
 package entity;
 
 import java.sql.Date;
+import java.util.Arrays;
 
 public class Group {
-    private int groupID;
-    private String groupName;
-    private int creatorID;
+    private int id;
+    private String name;
+    private Account creator;
     private Date CreateDate;
+    private Account[] accounts;
+
     public Group(){}
 
-    public Group(int groupID, String groupName, int creatorID, Date createDate) {
-        this.groupID = groupID;
-        this.groupName = groupName;
-        this.creatorID = creatorID;
-        CreateDate = createDate;
+    public Group(int id, String grName) {
+        this.id = id;
+        this.name = grName;
+    }
+
+    @Override
+    public String toString() {
+        return "Group{" +
+                "groupID=" + id +
+                ", groupName='" + name + '\'' +
+                ", creator=" + creator +
+                ", CreateDate=" + CreateDate +
+                ", accounts=" + Arrays.toString(accounts) +
+                '}';
     }
 
     public int getGroupID() {
-        return groupID;
+        return id;
     }
 
     public void setGroupID(int groupID) {
-        this.groupID = groupID;
+        this.id = groupID;
     }
 
-    public String getGroupName() {
-        return groupName;
+    public String getName() {
+        return name;
     }
 
-    public void setGroupName(String groupName) {
-        this.groupName = groupName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getCreatorID() {
-        return creatorID;
+    public Account getCreator() {
+        return creator;
     }
 
-    public void setCreatorID(int creatorID) {
-        this.creatorID = creatorID;
+    public void setCreator(Account creator) {
+        this.creator = creator;
     }
 
     public Date getCreateDate() {
@@ -48,13 +60,19 @@ public class Group {
         CreateDate = createDate;
     }
 
-    @Override
-    public String toString() {
-        return "Group{" +
-                "groupID=" + groupID +
-                ", groupName='" + groupName + '\'' +
-                ", creatorID=" + creatorID +
-                ", CreateDate=" + CreateDate +
-                '}';
+    public Account[] getAccounts() {
+        return accounts;
+    }
+
+    public void setAccounts(Account[] accounts) {
+        this.accounts = accounts;
+    }
+
+    public Group(int groupID, String groupName, Account creator, Date createDate, Account[] accounts) {
+        this.id = groupID;
+        this.name = groupName;
+        this.creator = creator;
+        CreateDate = createDate;
+        this.accounts = accounts;
     }
 }

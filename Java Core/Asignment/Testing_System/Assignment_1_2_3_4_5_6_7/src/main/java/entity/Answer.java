@@ -1,26 +1,36 @@
 package entity;
 
 public class Answer {
-    private int answerID;
+    private int id;
     private String content;
-    private String questionID;
+    private Question question;
     private boolean isCorrect;
 
     public Answer(){}
 
-    public Answer(int answerID, String content, String questionID, boolean isCorrect) {
-        this.answerID = answerID;
+    public Answer(int id, String content, Question question, boolean isCorrect) {
+        this.id = id;
         this.content = content;
-        this.questionID = questionID;
+        this.question = question;
         this.isCorrect = isCorrect;
     }
 
-    public int getAnswerID() {
-        return answerID;
+    @Override
+    public String toString() {
+        return "Answer{" +
+                "id=" + id +
+                ", content='" + content + '\'' +
+                ", question=" + question +
+                ", isCorrect=" + isCorrect +
+                '}';
     }
 
-    public void setAnswerID(int answerID) {
-        this.answerID = answerID;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getContent() {
@@ -31,12 +41,12 @@ public class Answer {
         this.content = content;
     }
 
-    public String getQuestionID() {
-        return questionID;
+    public Question getQuestion() {
+        return question;
     }
 
-    public void setQuestionID(String questionID) {
-        this.questionID = questionID;
+    public void setQuestion(Question question) {
+        this.question = question;
     }
 
     public boolean isCorrect() {
@@ -45,15 +55,5 @@ public class Answer {
 
     public void setCorrect(boolean correct) {
         isCorrect = correct;
-    }
-
-    @Override
-    public String toString() {
-        return "Answer{" +
-                "answerID=" + answerID +
-                ", content='" + content + '\'' +
-                ", questionID='" + questionID + '\'' +
-                ", isCorrect=" + isCorrect +
-                '}';
     }
 }

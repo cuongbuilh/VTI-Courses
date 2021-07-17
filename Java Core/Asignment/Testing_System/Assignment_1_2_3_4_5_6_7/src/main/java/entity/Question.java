@@ -3,31 +3,31 @@ package entity;
 import java.sql.Date;
 
 public class Question {
-    private int questionID;
+    private int id;
     private String content;
-    private int categoryID;
-    private int typeID;
-    private int creatorID;
+    private TypeQuestion type;
+    private Account creator;
     private Date createDate;
+
+    public Question(){}
 
     @Override
     public String toString() {
         return "Question{" +
-                "questionID=" + questionID +
+                "id=" + id +
                 ", content='" + content + '\'' +
-                ", categoryID=" + categoryID +
-                ", typeID=" + typeID +
-                ", creatorID=" + creatorID +
+                ", type=" + type +
+                ", creator=" + creator +
                 ", createDate=" + createDate +
                 '}';
     }
 
-    public int getQuestionID() {
-        return questionID;
+    public int getId() {
+        return id;
     }
 
-    public void setQuestionID(int questionID) {
-        this.questionID = questionID;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getContent() {
@@ -38,28 +38,20 @@ public class Question {
         this.content = content;
     }
 
-    public int getCategoryID() {
-        return categoryID;
+    public TypeQuestion getType() {
+        return type;
     }
 
-    public void setCategoryID(int categoryID) {
-        this.categoryID = categoryID;
+    public void setType(TypeQuestion type) {
+        this.type = type;
     }
 
-    public int getTypeID() {
-        return typeID;
+    public Account getCreator() {
+        return creator;
     }
 
-    public void setTypeID(int typeID) {
-        this.typeID = typeID;
-    }
-
-    public int getCreatorID() {
-        return creatorID;
-    }
-
-    public void setCreatorID(int creatorID) {
-        this.creatorID = creatorID;
+    public void setCreator(Account creator) {
+        this.creator = creator;
     }
 
     public Date getCreateDate() {
@@ -70,15 +62,11 @@ public class Question {
         this.createDate = createDate;
     }
 
-    public Question(int questionID, String content, int categoryID, int typeID, int creatorID, Date createDate) {
-        this.questionID = questionID;
+    public Question(int id, String content, TypeQuestion type, Account creator, Date createDate) {
+        this.id = id;
         this.content = content;
-        this.categoryID = categoryID;
-        this.typeID = typeID;
-        this.creatorID = creatorID;
+        this.type = type;
+        this.creator = creator;
         this.createDate = createDate;
-    }
-
-    public Question() {
     }
 }

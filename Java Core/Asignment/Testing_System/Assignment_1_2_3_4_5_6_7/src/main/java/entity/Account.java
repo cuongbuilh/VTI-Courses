@@ -1,38 +1,37 @@
 package entity;
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class Account {
-    private int accountID;
+    private int id;
     private String email;
     private String userName;
     private String fullName;
-    private int departmentID;
-    private int positionID;
+    private Department department;
+    private Position position;
     private Date createDate;
-    private Gender gender;
+    private Group[] groups;
 
-    public Account() {
-    }
+    public Account(){};
 
-
-    public Account(int accountID, String email, String userName, String fullName, int departmentID, int positionID, Date createDate, Gender gender) {
-        this.accountID = accountID;
+    public Account(int accountID, String email, String userName, String fullName, Department department, Position position, Date createDate, Group[] groups) {
+        this.id = accountID;
         this.email = email;
         this.userName = userName;
         this.fullName = fullName;
-        this.departmentID = departmentID;
-        this.positionID = positionID;
+        this.department = department;
+        this.position = position;
         this.createDate = createDate;
-        this.gender = gender;
+        this.groups = groups;
     }
 
-    public int getAccountID() {
-        return accountID;
+    public int getId() {
+        return id;
     }
 
-    public void setAccountID(int accountID) {
-        this.accountID = accountID;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getEmail() {
@@ -59,20 +58,20 @@ public class Account {
         this.fullName = fullName;
     }
 
-    public int getDepartmentID() {
-        return departmentID;
+    public Department getDepartment() {
+        return department;
     }
 
-    public void setDepartmentID(int departmentID) {
-        this.departmentID = departmentID;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
-    public int getPositionID() {
-        return positionID;
+    public Position getPosition() {
+        return position;
     }
 
-    public void setPositionID(int positionID) {
-        this.positionID = positionID;
+    public void setPosition(Position position) {
+        this.position = position;
     }
 
     public Date getCreateDate() {
@@ -83,25 +82,25 @@ public class Account {
         this.createDate = createDate;
     }
 
-    public Gender getGender() {
-        return gender;
+    public Group[] getGroups() {
+        return groups;
     }
 
-    public void setGender(Gender gender) {
-        this.gender = gender;
+    public void setGroups(Group[] groups) {
+        this.groups = groups;
     }
 
     @Override
     public String toString() {
         return "Account{" +
-                "accountID=" + accountID +
+                "accountID=" + id +
                 ", email='" + email + '\'' +
                 ", userName='" + userName + '\'' +
                 ", fullName='" + fullName + '\'' +
-                ", departmentID=" + departmentID +
-                ", positionID=" + positionID +
+                ", department=" + department +
+                ", position=" + position +
                 ", createDate=" + createDate +
-                ", gender='" + gender + '\'' +
+                ", groups=" + Arrays.toString(groups) +
                 '}';
     }
 }

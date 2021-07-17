@@ -1,34 +1,35 @@
 package entity;
 
 import java.sql.Date;
+import java.util.Arrays;
 
 public class Exam {
-    private int examID;
+    private int id;
     private String code;
     private String title;
-    private int categoryID;
+    private CategoryQuestion[] categories;
     private int duration;
-    private int creatorID;
+    private Account creator;
     private Date createDate;
 
     public Exam(){}
 
-    public Exam(int examID, String code, String title, int categoryID, int duration, int creatorID, Date createDate) {
-        this.examID = examID;
+    public Exam(int id, String code, String title, CategoryQuestion[] categories, int duration, Account creator, Date createDate) {
+        this.id = id;
         this.code = code;
         this.title = title;
-        this.categoryID = categoryID;
+        this.categories = categories;
         this.duration = duration;
-        this.creatorID = creatorID;
+        this.creator = creator;
         this.createDate = createDate;
     }
 
-    public int getExamID() {
-        return examID;
+    public int getId() {
+        return id;
     }
 
-    public void setExamID(int examID) {
-        this.examID = examID;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCode() {
@@ -47,12 +48,12 @@ public class Exam {
         this.title = title;
     }
 
-    public int getCategoryID() {
-        return categoryID;
+    public CategoryQuestion[] getCategories() {
+        return categories;
     }
 
-    public void setCategoryID(int categoryID) {
-        this.categoryID = categoryID;
+    public void setCategories(CategoryQuestion[] categories) {
+        this.categories = categories;
     }
 
     public int getDuration() {
@@ -63,12 +64,12 @@ public class Exam {
         this.duration = duration;
     }
 
-    public int getCreatorID() {
-        return creatorID;
+    public Account getCreator() {
+        return creator;
     }
 
-    public void setCreatorID(int creatorID) {
-        this.creatorID = creatorID;
+    public void setCreator(Account creator) {
+        this.creator = creator;
     }
 
     public Date getCreateDate() {
@@ -82,12 +83,12 @@ public class Exam {
     @Override
     public String toString() {
         return "Exam{" +
-                "examID=" + examID +
+                "id=" + id +
                 ", code='" + code + '\'' +
                 ", title='" + title + '\'' +
-                ", categoryID=" + categoryID +
+                ", categories=" + Arrays.toString(categories) +
                 ", duration=" + duration +
-                ", creatorID=" + creatorID +
+                ", creator=" + creator +
                 ", createDate=" + createDate +
                 '}';
     }
