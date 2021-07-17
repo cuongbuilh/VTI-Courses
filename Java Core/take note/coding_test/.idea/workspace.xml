@@ -5,16 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c926f8fa-248c-47c8-a7c4-42f9d37df385" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_2/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_3/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/lesson_2/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/Answer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/CategoryQuestion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/Department.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/Exam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/ExamQuestion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/Gender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/Group.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/GroupAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/Position.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/Question.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/target/classes/entity/TypeQuestion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/write_documentation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/TypeQuestion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson_1/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/src/main/java/entity/CategoryQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/CategoryQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/src/main/java/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/src/main/java/entity/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/src/main/java/entity/ExamQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/ExamQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/src/main/java/entity/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/src/main/java/entity/GroupAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/GroupAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/src/main/java/entity/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/src/main/java/entity/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1/src/main/java/entity/TypeQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Asignment/Testing_System/Assignment_1_2_3_4_5_6_7/src/main/java/entity/TypeQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/lesson_3/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/lesson_3/App.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +63,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -41,18 +81,35 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Asignment/Testing_System/Testing_System_1" />
+    <property name="settings.editor.selected.configurable" value="copyright.filetypes.JAVA" />
   </component>
-  <component name="RunManager" selected="Application.App (1)">
+  <component name="RunManager" selected="Application.App (2)">
     <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson_3.App" />
       <module name="coding_test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lesson_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_1.App" />
+      <module name="coding_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson_1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,6 +143,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App (2)" />
         <item itemvalue="Application.App (1)" />
         <item itemvalue="Application.App" />
       </list>
@@ -100,6 +158,8 @@
       <option name="presentableId" value="Default" />
       <updated>1626193144305</updated>
       <workItem from="1626193150314" duration="4089000" />
+      <workItem from="1626308072432" duration="157000" />
+      <workItem from="1626436978883" duration="4612000" />
     </task>
     <servers />
   </component>
@@ -116,6 +176,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

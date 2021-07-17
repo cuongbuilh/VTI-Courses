@@ -1,0 +1,6 @@
+<component name="CopyrightManager">
+  <copyright>
+    <option name="notice" value="/**&#10;* Returns ...&#10;*@describe ...&#10;* @param  url  an absolute URL giving the base location of the image&#10;* @param  name the location of the image, relative to the url argument&#10;* @return      the image at the specified URL&#10;* @see         Image&#10;*/" />
+    <option name="myName" value="write documentation" />
+  </copyright>
+</component>
