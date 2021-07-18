@@ -1,6 +1,7 @@
 package entity;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Arrays;
 
 public class Exam {
@@ -10,11 +11,11 @@ public class Exam {
     private CategoryQuestion[] categories;
     private int duration;
     private Account creator;
-    private Date createDate;
+    private LocalDateTime createDate;
 
     public Exam(){}
 
-    public Exam(int id, String code, String title, CategoryQuestion[] categories, int duration, Account creator, Date createDate) {
+    public Exam(int id, String code, String title, CategoryQuestion[] categories, int duration, Account creator, LocalDateTime createDate) {
         this.id = id;
         this.code = code;
         this.title = title;
@@ -22,6 +23,11 @@ public class Exam {
         this.duration = duration;
         this.creator = creator;
         this.createDate = createDate;
+    }
+
+    public Exam(int id, LocalDateTime date) {
+        this.id= id;
+        this.createDate = date;
     }
 
     public int getId() {
@@ -72,11 +78,11 @@ public class Exam {
         this.creator = creator;
     }
 
-    public Date getCreateDate() {
+    public LocalDateTime getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Date createDate) {
+    public void setCreateDate(LocalDateTime createDate) {
         this.createDate = createDate;
     }
 

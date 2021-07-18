@@ -68,9 +68,9 @@ public class Excercise2 {
     }
 
     static void cau6(Account[] accounts) {
-        System.out.printf("%-11s | %-10s | %-18s \n","Email","Full name","department name");
+        System.out.printf("%-18s | %-10s | %-18s \n","Email","Full name","department name");
         for (Account account : accounts) {
-            System.out.printf("%-10s | %-10s | %-10s\n", account.getEmail(), account.getFullName(), account.getDepartment().getDepartmentName());
+            System.out.printf("%-18s | %-10s | %-10s\n", account.getEmail(), account.getFullName(), account.getDepartment().getDepartmentName());
         }
     }
 }
