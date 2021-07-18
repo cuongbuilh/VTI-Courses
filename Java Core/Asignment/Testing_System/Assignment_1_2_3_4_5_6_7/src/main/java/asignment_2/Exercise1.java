@@ -7,7 +7,7 @@ import entity.Position;
 
 import java.util.Date;
 
-public class Excercise1 {
+public class Exercise1 {
     public static void main(String[] args) {
         Department dep1 = new Department(1, "mar");
         Department dep2 = new Department(2, "mar");

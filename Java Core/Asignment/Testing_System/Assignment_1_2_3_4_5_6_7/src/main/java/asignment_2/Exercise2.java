@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.SimpleTimeZone;
 
-public class Excercise2 {
+public class Exercise2 {
     public static void main(String[] args) {
         Department dep1 = new Department(1, "mar");
         Department dep2 = new Department(2, "mar");

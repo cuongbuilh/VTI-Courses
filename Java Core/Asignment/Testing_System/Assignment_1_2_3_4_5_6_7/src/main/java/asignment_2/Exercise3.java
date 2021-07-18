@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Locale;
 
-public class Excercise3 {
+public class Exercise3 {
     public static void main(String[] args) {
         Department dep1 = new Department(1, "mar");
         Department dep2 = new Department(2, "mar");
