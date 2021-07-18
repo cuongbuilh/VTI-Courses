@@ -1,10 +1,19 @@
 package entity;
 
 public class Position {
+    public  static Position Dev = new Position("Dev");
+    public static Position Test= new Position("Test");
+    public static Position ScrumMaster = new Position("ScrumMaster");
+    public static Position PM = new Position("PM");
+
     private int positionID;
     private String positionName;
 
     public Position() {
+    }
+
+    public Position(String name) {
+        this.positionName = name;
     }
 
     @Override
