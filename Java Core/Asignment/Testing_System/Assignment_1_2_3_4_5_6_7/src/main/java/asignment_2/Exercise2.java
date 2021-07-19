@@ -6,6 +6,7 @@ import entity.Group;
 import entity.Position;
 
 import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -33,12 +34,14 @@ public class Exercise2 {
         Account acc2 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, new Date(2021, 12, 12), new Group[]{gr1, gr3});
         Account acc3 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, new Date(2021, 12, 12), new Group[]{gr1, gr3});
 
+        Date now =  Date.from(Instant.now());
+        System.out.println(now);
 //        cau1();
 //        cau2();
 //        cau3();
 //        cau4();
 //        cau5();
-        cau6(new Account[] {acc1,acc2,acc3});
+//        cau6(new Account[] {acc1,acc2,acc3});
     }
 
     static void cau1() {
