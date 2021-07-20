@@ -35,4 +35,19 @@ public class Department {
                 ", departmentName='" + departmentName + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Department)) return false;
+
+        Department that = (Department) o;
+
+        return getDepartmentName() != null ? getDepartmentName().equals(that.getDepartmentName()) : that.getDepartmentName() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return getDepartmentName() != null ? getDepartmentName().hashCode() : 0;
+    }
 }

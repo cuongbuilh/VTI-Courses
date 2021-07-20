@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5249e0ff-e149-4aeb-ab69-59fc44d5e0a8" name="Default Changelist" comment="rename ex123">
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_3/Exercise_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_3/Exercise_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_3/Exercise_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_3/Exercise_4.java" afterDir="false" />
+    <list default="true" id="5249e0ff-e149-4aeb-ab69-59fc44d5e0a8" name="Default Changelist" comment="update assignment 3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_3/Exercise_5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/asignment_2/Exercise2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asignment_2/Exercise2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asignment_2/Excercise1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asignment_2/Excercise2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asignment_2/Excercise3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/asignment_2/Exercise5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/asignment_2/Exercise5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/asignment_3/Exercise_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asignment_3/Exercise_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Department.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Exercise_4">
-    <configuration name="Exercise2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="asignment_2.Exercise2" />
-      <module name="Asignment_1_2_3_4_5_6_7" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="asignment_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Exercise_5">
     <configuration name="Exercise_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="asignment_3.Exercise_1" />
       <module name="Asignment_1_2_3_4_5_6_7" />
@@ -115,26 +94,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration name="Exercise_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="asignment_3.Exercise_5" />
+      <module name="Asignment_1_2_3_4_5_6_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="asignment_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Exercise_5" />
         <item itemvalue="Application.Exercise_4" />
-        <item itemvalue="Application.Exercise_3" />
         <item itemvalue="Application.Exercise_2" />
+        <item itemvalue="Application.Exercise_3" />
         <item itemvalue="Application.Exercise_1" />
-        <item itemvalue="Application.Exercise2" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +137,8 @@
       <option name="presentableId" value="Default" />
       <updated>1626447058529</updated>
       <workItem from="1626447060182" duration="390000" />
-      <workItem from="1626535913906" duration="30723000" />
+      <workItem from="1626535913906" duration="31217000" />
+      <workItem from="1626758784991" duration="5688000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1626535981827</created>
@@ -219,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626626258118</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update assignment 3">
+      <created>1626707468133</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626707468133</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +245,7 @@
     <MESSAGE value="update test2_ex6" />
     <MESSAGE value="update test2_ex5" />
     <MESSAGE value="rename ex123" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename ex123" />
+    <MESSAGE value="update assignment 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="update assignment 3" />
   </component>
 </project>

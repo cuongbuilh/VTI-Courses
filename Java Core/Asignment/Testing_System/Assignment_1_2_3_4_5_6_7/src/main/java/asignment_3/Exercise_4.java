@@ -1,5 +1,9 @@
 package asignment_3;
 
+import com.sun.nio.sctp.AbstractNotificationHandler;
+import entity.Group;
+
+import javax.lang.model.element.NestingKind;
 import java.util.*;
 
 public class Exercise_4 {
@@ -12,13 +16,13 @@ public class Exercise_4 {
 //        cau6();
 //        cau7();
 //        cau8();
-        cau9();
-        cau10();
-        cau11();
-        cau12();
-        cau13();
-        cau14();
-        cau15();
+//        cau9();
+//        cau10();
+//        cau11();
+//        cau12();
+//        cau13();
+//        cau14();
+//        cau15();
         cau16();
     }
 
@@ -125,27 +129,119 @@ public class Exercise_4 {
     }
 
     static void cau9() {
+        Group gr1 = new Group(1, "Java");
+        Group gr2 = new Group(2, "Java 2");
+        Group gr3 = new Group(3, "test");
+
+        Group[] groups = {gr1, gr2, gr3};
+
+        for (Group gr : groups) {
+            if (gr.getName().equals("Java"))
+                System.out.println(gr.toString());
+        }
 
     }
 
     static void cau10() {
+        String s1 = "abcd";
+        String s2 = "dcba";
+
+        StringBuilder sb1 = new StringBuilder(s1).reverse();
+        StringBuilder sb2 = new StringBuilder(s2);
+
+        if (sb1.compareTo(sb2) == 0) {
+            System.out.println("OK");
+        } else
+            System.out.println("KO");
+
     }
 
     static void cau11() {
+        String str = "aaaaa bva";
+
+        int total = 0;
+
+        for (char c : str.toCharArray()) {
+            if (c == 'a') total++;
+        }
+
+        System.out.println(total);
     }
 
     static void cau12() {
+        String str = "12345";
+        String reverse = "";
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reverse += str.charAt(i);
+        }
+
+        System.out.println(reverse);
     }
 
     static void cau13() {
+        String s = "1avv";
+        boolean hasNumber = false;
+
+        for (char c : s.toCharArray()) {
+            if (Character.isDigit(c)) {
+                hasNumber = true;
+                break;
+            }
+        }
+
+        System.out.println(hasNumber);
     }
 
     static void cau14() {
+        String str = "VTI Academy";
+
+        String result = str.replace("a", "*");
+
+        System.out.println(result);
     }
 
     static void cau15() {
+        String str = "  dev   am i   ";
+        // xoa khoang trang o dau
+        while (str.startsWith(" ")) {
+            str = str.substring(1);
+        }
+        // xoa cuoi
+        while (str.endsWith(" ")) {
+            str = str.substring(0, str.length() - 1);
+        }
+        // xoa giua - tung 2 khoang cachs = 1 khoang cachs den het
+        while (str.contains("  ")) {
+            str = str.replace("  ", " ");
+        }
+        // dao chuoi
+        String result = "";
+        for (String s : str.split(" ")) {
+            result += " " + s;
+        }
+        // xoa khoang trang o dau
+        result = result.substring(1);
+
+        System.out.println(result);
+
     }
 
     static void cau16() {
+        String str = "12345678";
+        int n =2;
+
+        if(str.length()%n != 0){
+            System.out.println("KO");
+            return;
+        }
+
+        while (str.length() >= n){
+            // in n ki tu dau
+            System.out.println(str.substring(0,n));
+            // gan = chuoi tu n -> het
+            str = str.substring(n);
+        }
+
     }
 }
