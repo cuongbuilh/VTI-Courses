@@ -5,6 +5,7 @@ import entity.Department;
 import entity.Group;
 import entity.Position;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -22,9 +23,9 @@ public class Exercise_5 {
         Group gr2 = new Group(2, "test");
         Group gr3 = new Group(3, "test");
 
-        Account acc1 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, new Date(2021, 12, 12), new Group[]{gr1, gr3});
-        Account acc2 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, new Date(2021, 12, 12), new Group[]{gr1, gr3});
-        Account acc3 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, new Date(2021, 12, 12), new Group[]{gr1, gr3});
+        Account acc1 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, LocalDate.now(), new Group[]{gr1, gr3});
+        Account acc2 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1,  LocalDate.now(), new Group[]{gr1, gr3});
+        Account acc3 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, LocalDate.now(), new Group[]{gr1, gr3});
 
 
 //        cau1(dep1);

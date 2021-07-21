@@ -2,8 +2,10 @@ package asignment_2;
 
 import entity.*;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
@@ -21,23 +23,25 @@ public class Exercise3 {
         Group gr2 = new Group(2, "test");
         Group gr3 = new Group(3, "test");
 
-        Account acc1 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, new Date(2021, 12, 12), new Group[]{gr1, gr3});
-        Account acc2 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, new Date(2021, 12, 12), new Group[]{gr1, gr3});
-        Account acc3 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, new Date(2021, 12, 12), new Group[]{gr1, gr3});
+        Account acc1 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, LocalDate.now(), new Group[]{gr1, gr3});
+        Account acc2 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, LocalDate.now(), new Group[]{gr1, gr3});
+        Account acc3 = new Account(1, "a@gmail.com", "a", "nva", dep1, pos1, LocalDate.now(), new Group[]{gr1, gr3});
 
         Exam exam = new Exam(1, LocalDateTime.now());
 
-//        cau1(exam);
+
+
+        cau1(exam);
 //        cau2(exam);
 //        cau3();
 //        cau4();
-        cau5();
+//        cau5();
     }
 
     static void cau1(Exam exam) {
-//        Locale locale = new Locale("vn","VN");
+        Locale locale = new Locale("vn","VN");
         String pattern = "dd/MM/yyyy HH:mm:ss";
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(pattern);
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(pattern,locale);
         System.out.println(dateTimeFormatter.format(exam.getCreateDate()));
 
     }
@@ -69,7 +73,6 @@ public class Exercise3 {
         LocalDateTime lct = LocalDateTime.parse(str, dateTimeFormatter);
         System.out.printf("thnag %d nam %d \n", lct.getMonthValue(), lct.getYear());
     }
-
 
     static void cau5() {
         String pattern = "dd-MM-yyyy - HH-mm-ss";

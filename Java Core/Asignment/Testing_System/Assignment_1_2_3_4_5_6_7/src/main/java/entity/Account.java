@@ -1,5 +1,6 @@
 package entity;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -10,12 +11,12 @@ public class Account implements Comparable<Account>{
     private String fullName;
     private Department department;
     private Position position;
-    private Date createDate;
+    private LocalDate createDate;
     private Group[] groups;
 
     public Account(){}
 
-    public Account(int accountID, String email, String userName, String fullName, Department department, Position position, Date createDate, Group[] groups) {
+    public Account(int accountID, String email, String userName, String fullName, Department department, Position position, LocalDate createDate, Group[] groups) {
         this.id = accountID;
         this.email = email;
         this.userName = userName;
@@ -78,11 +79,11 @@ public class Account implements Comparable<Account>{
         this.position = position;
     }
 
-    public Date getCreateDate() {
+    public LocalDate getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Date createDate) {
+    public void setCreateDate(LocalDate createDate) {
         this.createDate = createDate;
     }
 

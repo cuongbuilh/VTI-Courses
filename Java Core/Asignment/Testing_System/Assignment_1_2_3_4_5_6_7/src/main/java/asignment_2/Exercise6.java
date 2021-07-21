@@ -3,11 +3,12 @@ package asignment_2;
 import entity.Account;
 import entity.Group;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Exercise6 {
     public static void main(String[] args) {
-        Account acc1 = new Account(1, "a@gmail.com", "a", "nva", null, null, new Date(2021, 12, 12), null);
+        Account acc1 = new Account(1, "a@gmail.com", "a", "nva", null, null, LocalDate.now(), null);
 
         cau1();
         cau2(acc1);

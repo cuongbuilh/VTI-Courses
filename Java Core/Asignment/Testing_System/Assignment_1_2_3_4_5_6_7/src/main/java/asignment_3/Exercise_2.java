@@ -3,6 +3,7 @@ package asignment_3;
 import entity.Account;
 
 import java.time.Instant;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -16,7 +17,7 @@ public class Exercise_2 {
             account.setEmail("Email " + (i + 1));
             account.setUserName("user name " + (i + 1));
             account.setFullName("full name " + (i + 1));
-            account.setCreateDate(Date.from(Instant.now()));
+            account.setCreateDate(LocalDate.now());
             // insert account into account list
             accounts.add(account);
         }
