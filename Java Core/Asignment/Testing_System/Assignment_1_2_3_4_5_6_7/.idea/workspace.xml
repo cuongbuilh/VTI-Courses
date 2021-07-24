@@ -4,24 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5249e0ff-e149-4aeb-ab69-59fc44d5e0a8" name="Default Changelist" comment="update assignment_3 ; ex_6">
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_5/excercise_1/INews.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_5/excercise_1/News.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_5/excercise_2/IStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_5/excercise_2/Student.java" afterDir="false" />
+    <list default="true" id="5249e0ff-e149-4aeb-ab69-59fc44d5e0a8" name="Default Changelist" comment="update assignment_4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question1/Question1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/backend/Exercise5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/CanBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/CongNhan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/GioiTinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/KySu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/NhanVien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/QLCB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/frontend/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment_4/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asignment_4/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment_4/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asignment_4/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment_4/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asignment_4/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment_4/Exercise_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asignment_4/Exercise_4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment_4/Exercise_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asignment_4/Exercise_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment_4/Exercise_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asignment_4/Exercise_6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assignment_4/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/asignment_4/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment_4/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment_4/Circle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment_4/Date.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment_4/Exercise_4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assignment_4/Student.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,21 +47,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/asignment_6/question2/frontend" />
   </component>
-  <component name="RunManager" selected="Application.Student">
-    <configuration name="Exercise3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="asignment_2.Exercise3" />
-      <module name="Asignment_1_2_3_4_5_6_7" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="asignment_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/asignment_6/question2/frontend" />
+      <recent name="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity" />
+      <recent name="$PROJECT_DIR$/src/main/java/asignment_6/question2/backend" />
+      <recent name="$PROJECT_DIR$/src/main/java/asignment_6/question1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Program">
     <configuration name="Exercise_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="asignment_4.Exercise_5" />
       <module name="Asignment_1_2_3_4_5_6_7" />
@@ -95,12 +84,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="asignment_1.Main" />
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="asignment_6.question2.frontend.Program" />
       <module name="Asignment_1_2_3_4_5_6_7" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="asignment_1.*" />
+          <option name="PATTERN" value="asignment_6.question2.frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Question1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="asignment_6.question1.Question1" />
+      <module name="Asignment_1_2_3_4_5_6_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="asignment_6.question1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,13 +123,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Program" />
+        <item itemvalue="Application.Question1" />
         <item itemvalue="Application.Student" />
         <item itemvalue="Application.Exercise_6" />
         <item itemvalue="Application.Exercise_5" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Exercise3" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +158,8 @@
       <workItem from="1626852235208" duration="11553000" />
       <workItem from="1626917738420" duration="13000" />
       <workItem from="1627040884282" duration="6615000" />
-      <workItem from="1627122618666" duration="1066000" />
+      <workItem from="1627122618666" duration="1907000" />
+      <workItem from="1627126977870" duration="5087000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1626535981827</created>
@@ -245,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626880660537</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update assignment_4">
+      <created>1627125823919</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1627125823919</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +298,38 @@
     <MESSAGE value="update assignment_3 ; ex_4,5" />
     <MESSAGE value="update assignment_3 ; ex_5" />
     <MESSAGE value="update assignment_3 ; ex_6" />
-    <option name="LAST_COMMIT_MESSAGE" value="update assignment_3 ; ex_6" />
+    <MESSAGE value="update assignment_4" />
+    <option name="LAST_COMMIT_MESSAGE" value="update assignment_4" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/QLCB.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/QLCB.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/QLCB.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/QLCB.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/QLCB.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
