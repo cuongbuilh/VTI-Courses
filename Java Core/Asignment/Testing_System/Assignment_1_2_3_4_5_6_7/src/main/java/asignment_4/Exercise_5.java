@@ -1,7 +1,5 @@
-package assignment_4;
+package asignment_4;
 
-import java.awt.event.PaintEvent;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

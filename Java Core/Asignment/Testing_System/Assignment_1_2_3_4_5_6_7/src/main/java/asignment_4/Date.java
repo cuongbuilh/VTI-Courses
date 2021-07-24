@@ -1,4 +1,4 @@
-package assignment_4;
+package asignment_4;
 
 public class Date {
     private int day;
