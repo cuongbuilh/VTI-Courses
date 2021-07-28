@@ -4,39 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31e2d28e-e899-4f0d-8c96-c20ad6ea143e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assignment_1_2_3_4_5_6_7/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_copy/test_renamed.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/Exercise_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/Exercise_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/Exercise_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/Exercise_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/backend/Exercise_5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Configs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/HinhChuNhat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/HinhHoc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/HinhHocException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/HinhTron.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/IMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/MyMath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/OverStudentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/PrimaryStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/SecondaryStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/frontend/Program1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/frontend/Program2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/frontend/Program3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/frontend/Program4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/frontend/Program5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment_1_2_3_4_5_6_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment_1_2_3_4_5_6_7/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="31e2d28e-e899-4f0d-8c96-c20ad6ea143e" name="Changes" comment="create new assignment_7 &amp;&amp; finish ex 123">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/FileManager.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,8 +86,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1627450206097</updated>
-      <workItem from="1627450208285" duration="11703000" />
+      <workItem from="1627450208285" duration="16043000" />
     </task>
+    <task id="LOCAL-00001" summary="create new assignment_7 &amp;&amp; finish ex 123">
+      <created>1627464312840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1627464312840</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,12 +114,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="create new assignment_7 &amp;&amp; finish ex 123" />
+    <option name="LAST_COMMIT_MESSAGE" value="create new assignment_7 &amp;&amp; finish ex 123" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
-      <configuration name="Application">
-        <watch expression="file.getParent()" />
-      </configuration>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/utils/FileManager.java" line="199">
+        <watch expression="folder.exists()" />
+      </inline-watch>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/utils/FileManager.java" line="199">
+        <watch expression="folder.isDirectory()" />
+      </inline-watch>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/utils/FileManager.java" line="223">
+        <watch expression="fileName" />
+      </inline-watch>
     </watches-manager>
   </component>
 </project>

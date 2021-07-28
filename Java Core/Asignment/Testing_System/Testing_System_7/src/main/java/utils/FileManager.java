@@ -1,33 +1,47 @@
 package utils;
 
 import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.nio.channels.Channels;
+import java.nio.channels.FileChannel;
+import java.nio.channels.ReadableByteChannel;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
 public class FileManager {
-//    public static void main(String[] args) {
-//        FileManager fileManager = new FileManager();
-//
-////        System.out.println(fileManager.isFileExists("data/test_file_1.txt"));
-////        fileManager.createNewFile("data","new.txt");
-////        fileManager.deleteFile("data/new.txt");
-////        System.out.println(fileManager.isFolder("data"));
-////       for(String s : fileManager.getAllFileName("data")){
-////           System.out.println(s);
-////       }
-////        try {
-////            fileManager.copyFile("data/test_file_1.txt","data","test_copy.txt");
-////        } catch (IOException e) {
-////            e.printStackTrace();
-////        }
-//
-////        fileManager.moveFile("data/test.txt", "data_copy");
-////        fileManager.createNewFolder("data2");
-////        fileManager.renameFile("data_copy/test.txt","test_renamed.txt");
-//
-//    }
+    public static void main(String[] args) {
+        FileManager fileManager = new FileManager();
+
+//        System.out.println(fileManager.isFileExists("data/test_file_1.txt"));
+//        fileManager.createNewFile("data","new.txt");
+//        fileManager.deleteFile("data/new.txt");
+//        System.out.println(fileManager.isFolder("data"));
+//       for(String s : fileManager.getAllFileName("data")){
+//           System.out.println(s);
+//       }
+//        try {
+//            fileManager.copyFile("data/test_file_1.txt","data","test_copy.txt");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
+//        fileManager.moveFile("data/test.txt", "data_copy");
+//        fileManager.createNewFolder("data2");
+//        fileManager.renameFile("data_copy/test.txt","test_renamed.txt");
+        String imgLink = "https://www.baeldung.com/wp-content/uploads/2016/05/baeldung-rest-post-footer-main-1.2.0.jpg";
+        String savedFolder = "data";
+
+        try {
+            fileManager.downloadFile(imgLink, savedFolder);
+        } catch (IOException e) {
+            System.out.println("cannot download - something was wrong");
+            e.printStackTrace();
+        }
+    }
 
     public boolean isFileExists(String filePath) {
         File file = new File(filePath);
@@ -181,7 +195,60 @@ public class FileManager {
         }
     }
 
-    public void downloadFile(String fileLink, String folderDir) {
+    public void downloadFile(String fileLink, String savedFolder) throws IOException {
+        File folder = new File(savedFolder);
+        if (!folder.exists() || !folder.isDirectory()) {
+            System.out.println("cannot download - folder has not exists!");
+            return;
+        }
 
+//        // myWay
+//        URL url = new URL(fileLink);
+//        // get filename -> create fileSave
+//        String[] s = fileLink.split("/");
+//        String fileName = s[s.length - 1];
+//        savedFolder = savedFolder + "/" + fileName;
+//        ReadableByteChannel readableByteChannel = Channels.newChannel(url.openStream());
+//        // transfer
+//        FileOutputStream fileOutputStream = new FileOutputStream(savedFolder);
+//        FileChannel fileChannel = fileOutputStream.getChannel();
+//        fileChannel.transferFrom(readableByteChannel,0,Long.MAX_VALUE);
+//        // close all
+//        fileChannel.close();
+//        fileOutputStream.close();
+//        readableByteChannel.close();
+//        System.out.println("dowload successful");
+
+        // get filename -> create fileSave
+        String[] s = fileLink.split("/");
+        String fileName = s[s.length - 1];
+        savedFolder = savedFolder + "/" + fileName;
+
+        // connect to url
+        URL url = new URL(fileLink);
+        URLConnection connection = url.openConnection();
+        connection.connect();
+
+        // get stream
+        InputStream in = connection.getInputStream();
+        FileOutputStream fos = new FileOutputStream(savedFolder);
+
+        // config
+        long size = connection.getContentLengthLong();
+        int byteDowloaded = 0;
+        byte[] b = new byte[1024];
+        int length = in.read(b);
+
+        // downloading
+        while (length != -1) {
+            byteDowloaded += length;
+            System.out.println(byteDowloaded * 100d / size + "%");
+            fos.write(b, 0, length);
+            length = in.read(b);
+        }
+        // close and notice
+        fos.close();
+        in.close();
+        System.out.println("dowload sucssesful");
     }
 }
