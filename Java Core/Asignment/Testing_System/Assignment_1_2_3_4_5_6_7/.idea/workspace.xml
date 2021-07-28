@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5249e0ff-e149-4aeb-ab69-59fc44d5e0a8" name="Default Changelist" comment="update assignment_4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question1/Question1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/backend/Exercise5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/CanBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/CongNhan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/GioiTinh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/KySu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/NhanVien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/entity/QLCB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/asignment_6/question2/frontend/Program.java" afterDir="false" />
+    <list default="true" id="5249e0ff-e149-4aeb-ab69-59fc44d5e0a8" name="Default Changelist" comment="update assignment_6">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/backend/Exercise_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/backend/Exercise_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/backend/Exercise_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/backend/Exercise_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/backend/Exercise_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/entity/MyMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/frontend/Program1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/frontend/Program2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/frontend/Program3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/frontend/Program4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Testing_System_7/src/main/java/frontend/Program5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +58,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/asignment_6/question2/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/asignment_7/frontend/Program1.java" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/asignment_7/frontend/Program1.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -57,29 +70,14 @@
       <recent name="$PROJECT_DIR$/src/main/java/asignment_6/question1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Program">
-    <configuration name="Exercise_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="asignment_4.Exercise_5" />
-      <module name="Asignment_1_2_3_4_5_6_7" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="asignment_4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exercise_6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="asignment_4.Exercise_6" />
-      <module name="Asignment_1_2_3_4_5_6_7" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="asignment_4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Application.Program2">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,6 +88,32 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="asignment_6.question2.frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Program1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="asignment_7.frontend.Program1" />
+      <module name="Asignment_1_2_3_4_5_6_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="asignment_7.frontend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Program2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="asignment_7.frontend.Program2" />
+      <module name="Asignment_1_2_3_4_5_6_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="asignment_7.frontend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,24 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Program" />
+        <item itemvalue="Application.Program2" />
+        <item itemvalue="Application.Program1" />
         <item itemvalue="Application.Question1" />
+        <item itemvalue="Application.Program" />
         <item itemvalue="Application.Student" />
-        <item itemvalue="Application.Exercise_6" />
-        <item itemvalue="Application.Exercise_5" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +172,11 @@
       <workItem from="1626917738420" duration="13000" />
       <workItem from="1627040884282" duration="6615000" />
       <workItem from="1627122618666" duration="1907000" />
-      <workItem from="1627126977870" duration="5087000" />
+      <workItem from="1627126977870" duration="6250000" />
+      <workItem from="1627286269459" duration="4569000" />
+      <workItem from="1627366515146" duration="523000" />
+      <workItem from="1627390471184" duration="597000" />
+      <workItem from="1627437966662" duration="5572000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1626535981827</created>
@@ -266,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627125823919</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update assignment_6">
+      <created>1627138054637</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1627138054637</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +323,8 @@
     <MESSAGE value="update assignment_3 ; ex_5" />
     <MESSAGE value="update assignment_3 ; ex_6" />
     <MESSAGE value="update assignment_4" />
-    <option name="LAST_COMMIT_MESSAGE" value="update assignment_4" />
+    <MESSAGE value="update assignment_6" />
+    <option name="LAST_COMMIT_MESSAGE" value="update assignment_6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -331,5 +356,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="maxValue" />
+        <watch expression="minValue" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
