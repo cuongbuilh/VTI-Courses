@@ -4,27 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31e2d28e-e899-4f0d-8c96-c20ad6ea143e" name="Changes" comment="finish assignment 7 - ex 3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/IOManager.java" afterDir="false" />
+    <list default="true" id="31e2d28e-e899-4f0d-8c96-c20ad6ea143e" name="Changes" comment="update assignment 7 - ex 4">
+      <change afterPath="$PROJECT_DIR$/../LoDe_Console/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LoDe_Console/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LoDe_Console/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LoDe_Console/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LoDe_Console/LoDe_Console.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LoDe_Console/src/utils/FileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LoDe_Console/src/utils/IOManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_copy/test_renamed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/PrimaryStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/PrimaryStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/SecondaryStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/SecondaryStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/Exercise_1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/Exercise_1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/Exercise_1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/Exercise_1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/Exercise_1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/Exercise_1$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/Exercise_1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/Exercise_1$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/Exercise_1$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/Exercise_1$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/Exercise_1$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/Exercise_1$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/Exercise_1$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/Exercise_1$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/Exercise_1$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/Exercise_1$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/backend/Exercise_1$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/backend/Exercise_1$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/PrimaryStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/PrimaryStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/SecondaryStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/SecondaryStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/FileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/IOManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/IOManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +111,8 @@
       <option name="presentableId" value="Default" />
       <updated>1627450206097</updated>
       <workItem from="1627450208285" duration="23290000" />
-      <workItem from="1627541233590" duration="5599000" />
+      <workItem from="1627541233590" duration="7898000" />
+      <workItem from="1627562990041" duration="1231000" />
     </task>
     <task id="LOCAL-00001" summary="create new assignment_7 &amp;&amp; finish ex 123">
       <created>1627464312840</created>
@@ -137,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627469055963</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update assignment 7 - ex 4">
+      <created>1627547273183</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1627547273183</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,15 +157,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="create new assignment_7 &amp;&amp; finish ex 123" />
     <MESSAGE value="finish assignment 7 - ex 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish assignment 7 - ex 3" />
+    <MESSAGE value="update assignment 7 - ex 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="update assignment 7 - ex 4" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/utils/FileManager.java" line="203">
-        <watch expression="folder.isDirectory()" />
+        <watch expression="folder.exists()" />
       </inline-watch>
       <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/utils/FileManager.java" line="203">
-        <watch expression="folder.exists()" />
+        <watch expression="folder.isDirectory()" />
       </inline-watch>
     </watches-manager>
   </component>
