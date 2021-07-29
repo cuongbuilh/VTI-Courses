@@ -4,7 +4,8 @@ final public class SecondaryStudent extends  Student{
    public static int numOfSecondaryStudent = 0;
 
    public SecondaryStudent() throws OverStudentException{
-      numOfSecondaryStudent++;
+       super(0);
+       numOfSecondaryStudent++;
    }
 
    @Override

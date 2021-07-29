@@ -5,10 +5,11 @@ abstract public class Student {
     private static String college;
     private static long moneyGroup;
 
-    private int id;
+    final private int id;
     private String name;
 
-    public Student() throws OverStudentException {
+    public Student(int id) throws OverStudentException {
+        this.id = id;
         if (numOfStudent >= 7) throw new OverStudentException();
         numOfStudent++;
     }
