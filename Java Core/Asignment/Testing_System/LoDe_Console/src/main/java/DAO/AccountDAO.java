@@ -8,7 +8,7 @@ import utils.IOManager;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AcountDAO {
+public class AccountDAO {
     final private String USER_DATA_PATH = "data/users.bin";
     final private IOManager ioManager = new IOManager();
 
@@ -42,7 +42,7 @@ public class AcountDAO {
         return superAdmins;
     }
 
-    public void saveAccounts(List<? extends List> accountList) {
+    public void saveAccounts(List accountList) {
         ioManager.writeObject(USER_DATA_PATH, accountList);
         System.out.println("accountList saved");
     }

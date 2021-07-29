@@ -18,4 +18,6 @@ public class Config {
     final public int MAX_VALUE_NAM = 9999;
     final public int MAX_VALUE_SAU = 999;
     final public int MAX_VALUE_BAY = 99;
+
+    final public int TIME_PER_SESSION = 30*1000;
 }
