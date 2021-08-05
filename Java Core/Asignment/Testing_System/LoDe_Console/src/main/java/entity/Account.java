@@ -44,6 +44,15 @@ public class Account implements Serializable {
         rules.add(Rule.USER);
     }
 
+    public Account(int id, String name, String username, String password, long amount, List<Rule> rules) {
+        this.id = id;
+        this.name = name;
+        this.username = username;
+        this.password = password;
+        this.amount = amount;
+        this.rules = rules;
+    }
+
     public void addMoney(long amount) {
         this.amount += amount;
     }

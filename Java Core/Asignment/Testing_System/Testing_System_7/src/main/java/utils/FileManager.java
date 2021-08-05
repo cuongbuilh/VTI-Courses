@@ -15,37 +15,35 @@ import java.util.Objects;
 
 
 public class FileManager {
-
-
-    public static void main(String[] args) {
-        FileManager fileManager = new FileManager();
-
-//        System.out.println(fileManager.isFileExists("data/test_file_1.txt"));
-//        fileManager.createNewFile("data","new.txt");
-//        fileManager.deleteFile("data/new.txt");
-//        System.out.println(fileManager.isFolder("data"));
-//       for(String s : fileManager.getAllFileName("data")){
-//           System.out.println(s);
-//       }
+//    public static void main(String[] args) {
+//        FileManager fileManager = new FileManager();
+//
+////        System.out.println(fileManager.isFileExists("data/test_file_1.txt"));
+////        fileManager.createNewFile("data","new.txt");
+////        fileManager.deleteFile("data/new.txt");
+////        System.out.println(fileManager.isFolder("data"));
+////       for(String s : fileManager.getAllFileName("data")){
+////           System.out.println(s);
+////       }
+////        try {
+////            fileManager.copyFile("data/test_file_1.txt","data","test_copy.txt");
+////        } catch (IOException e) {
+////            e.printStackTrace();
+////        }
+//
+////        fileManager.moveFile("data/test.txt", "data_copy");
+////        fileManager.createNewFolder("data2");
+////        fileManager.renameFile("data_copy/test.txt","test_renamed.txt");
+//        String imgLink = "https://www.baeldung.com/wp-content/uploads/2016/05/baeldung-rest-post-footer-main-1.2.0.jpg";
+//        String savedFolder = "data";
+//
 //        try {
-//            fileManager.copyFile("data/test_file_1.txt","data","test_copy.txt");
+//            fileManager.downloadFile(imgLink, savedFolder);
 //        } catch (IOException e) {
+//            System.out.println("cannot download - something was wrong");
 //            e.printStackTrace();
 //        }
-
-//        fileManager.moveFile("data/test.txt", "data_copy");
-//        fileManager.createNewFolder("data2");
-//        fileManager.renameFile("data_copy/test.txt","test_renamed.txt");
-        String imgLink = "https://www.baeldung.com/wp-content/uploads/2016/05/baeldung-rest-post-footer-main-1.2.0.jpg";
-        String savedFolder = "data";
-
-        try {
-            fileManager.downloadFile(imgLink, savedFolder);
-        } catch (IOException e) {
-            System.out.println("cannot download - something was wrong");
-            e.printStackTrace();
-        }
-    }
+//    }
 
     public boolean isFileExists(String filePath) {
         File file = new File(filePath);

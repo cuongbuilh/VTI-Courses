@@ -7,23 +7,6 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class IOManager {
-    public static void main(String[] args) throws Exception {
-        IOManager ioManager = new IOManager();
-        String testPath = "data/test.txt";
-
-        // write data
-        List<Integer> list = new ArrayList<>();
-        list.add(new Integer(1));
-        list.add(new Integer(2));
-        list.add(new Integer(3));
-        ioManager.writeObject(testPath, list);
-        // read all objects
-        List<Object> ls = (List<Object>) ioManager.readObjects(testPath);
-        for (var i : ls) {
-            System.out.println(i);
-        }
-    }
-
     public final FileManager fileManager = new FileManager();
 
     public FileWriter getFileWriter(String filePath, boolean isContinue) {
@@ -87,6 +70,7 @@ public class IOManager {
         }
 
         FileWriter fileWriter = getFileWriter(filePath, isContinue);
+
         String add_content = content + "\n";
         try {
             Objects.requireNonNull(fileWriter).write(add_content);

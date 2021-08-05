@@ -5,15 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31e2d28e-e899-4f0d-8c96-c20ad6ea143e" name="Changes" comment="update assignment 7 - ex 4">
-      <change afterPath="$PROJECT_DIR$/../LoDe_Console/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LoDe_Console/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LoDe_Console/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LoDe_Console/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LoDe_Console/LoDe_Console.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LoDe_Console/src/utils/FileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LoDe_Console/src/utils/IOManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LoDe_Console/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LoDe_Console/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_23.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LoDe_Console/data/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LoDe_Console/src/main/java/service/SessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trading_soso/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trading_soso/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trading_soso/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trading_soso/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trading_soso/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trading_soso/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../trading_soso/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/LoDe_Console.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/LoDe_Console.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/data/users.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/data/users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/src/main/java/DAO/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/src/main/java/DAO/AccountDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/src/main/java/DAO/BangSoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/src/main/java/DAO/BangSoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/src/main/java/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/src/main/java/app/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/src/main/java/entity/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/src/main/java/entity/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/src/main/java/utils/IOManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/src/main/java/utils/IOManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/src/test/java/DAO/AccountDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/src/test/java/DAO/AccountDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/target/classes/DAO/AcountDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/target/classes/app/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/target/classes/app/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/target/classes/entity/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/target/classes/entity/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/target/classes/entity/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/target/classes/entity/Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/target/classes/utils/IOManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LoDe_Console/target/classes/utils/IOManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoDe_Console/target/test-classes/DAO/AcountDAOTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/IOManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/IOManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +132,8 @@
       <workItem from="1627450208285" duration="23290000" />
       <workItem from="1627541233590" duration="7898000" />
       <workItem from="1627562990041" duration="1231000" />
+      <workItem from="1627645713637" duration="2571000" />
+      <workItem from="1627713975598" duration="134000" />
     </task>
     <task id="LOCAL-00001" summary="create new assignment_7 &amp;&amp; finish ex 123">
       <created>1627464312840</created>
@@ -162,10 +183,10 @@
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/utils/FileManager.java" line="203">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/utils/FileManager.java" line="201">
         <watch expression="folder.exists()" />
       </inline-watch>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/utils/FileManager.java" line="203">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/utils/FileManager.java" line="201">
         <watch expression="folder.isDirectory()" />
       </inline-watch>
     </watches-manager>

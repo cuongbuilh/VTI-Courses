@@ -28,5 +28,4 @@ public class BangSoDAO {
         bangSoList.add(bangSo);
         ioManager.writeObject(BANG_SO_DATA,bangSoList);
     }
-
 }

@@ -29,18 +29,9 @@ public class IOManager {
         return new Scanner(Objects.requireNonNull(getFileReader(filePath)));
     }
 
-    public ObjectOutputStream getObjectOutputStream(String filePath, boolean isContinue) {
+    public ObjectOutputStream getObjectOutputStream(String filePath ) {
         try {
-            return new ObjectOutputStream(new FileOutputStream(filePath, isContinue));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    public ObjectInputStream getObjectInputStream(String filePath) {
-        try {
-            return new ObjectInputStream(new FileInputStream(filePath));
+            return new ObjectOutputStream(new FileOutputStream(filePath, false));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -78,7 +69,7 @@ public class IOManager {
     }
 
     public void writeObject(String filePath, Object o) {
-        ObjectOutputStream objectOutputStream = getObjectOutputStream(filePath, false);
+        ObjectOutputStream objectOutputStream = getObjectOutputStream(filePath);
         try {
             Objects.requireNonNull(objectOutputStream).writeObject(o);
             objectOutputStream.flush();
@@ -91,11 +82,22 @@ public class IOManager {
     public Object readObjects(String filePath) {
         ObjectInputStream objectInputStream = getObjectInputStream(filePath);
         try {
-            return Objects.requireNonNull(objectInputStream).readObject();
+            return Objects.requireNonNull(objectInputStream.readObject());
         } catch (Exception e) {
             System.out.println("something wrong !!");
+            e.printStackTrace();
         }
         return null;
     }
 
+    public ObjectInputStream getObjectInputStream(String filePath) {
+        try {
+            FileInputStream fileInputStream = new FileInputStream(filePath);
+            return new ObjectInputStream(fileInputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("cannot get object input stream");
+        }
+        return null;
+    }
 }
