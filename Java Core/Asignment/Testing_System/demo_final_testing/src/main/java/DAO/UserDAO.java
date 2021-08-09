@@ -148,7 +148,4 @@ public class UserDAO extends AbsDAO {
         return false;
     }
 
-    public static void main(String[] args) {
-        new UserDAO().getUsers().forEach(u -> System.out.println(u));
-    }
 }

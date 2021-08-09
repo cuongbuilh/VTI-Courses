@@ -118,7 +118,7 @@ public class Application {
     }
 
     private static void showListUser() {
-        if (currUser == null) {
+        if (currUser == null || !currUser.isAdmin()) {
             System.out.println("you dont have permission!");
             return;
         }
