@@ -26,6 +26,7 @@ public class Application {
         int choice = DEFAULT;
         currUser = null;
         userController = new UserController();
+
         // start-app
         do {
             printMenuSelections();
@@ -38,6 +39,7 @@ public class Application {
             }
             process(choice);
         } while (choice != EXIT);
+
         // the-end
         System.out.println("BYE");
     }
