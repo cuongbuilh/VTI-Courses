@@ -46,8 +46,9 @@ public class Application {
 
     public static void printMenuSelections() {
         String userName = (currUser == null) ? "Guest" : currUser.getFullname();
+        boolean isAdmin = currUser != null && currUser.isAdmin();
         System.out.println("\n------------ SELECTIONS ------------");
-        System.out.println("you are: " + userName);
+        System.out.println("you are: " + userName + "\t isAdmin: " + isAdmin);
         System.out.print("""
                     0, exit
                     1, login
@@ -103,6 +104,12 @@ public class Application {
         System.out.print("passwd: ");
         String pass = sc.next();
         currUser = userController.login(email, pass);
+
+        if (currUser == null) {
+            System.out.println("cannot loggin!");
+        } else {
+            System.out.println("login: " + currUser.getEmail());
+        }
     }
 
     private static void logout() {
@@ -111,7 +118,16 @@ public class Application {
     }
 
     private static void showListUser() {
+        if (currUser == null) {
+            System.out.println("you dont have permission!");
+            return;
+        }
+
         List<User> users = userController.getUsers();
+
+        if (users == null) {
+            System.out.println("you dont have permission!");
+        }
 
         for (User user : users) {
             System.out.println(user);
@@ -119,8 +135,9 @@ public class Application {
     }
 
     private static void createUser() {
-        if (!currUser.isAdmin() || currUser == null) {
+        if (currUser == null || !currUser.isAdmin()) {
             System.out.println("you must be an admin!");
+            return;
         }
 
         Scanner sc = new Scanner(System.in);
@@ -142,6 +159,5 @@ public class Application {
             System.out.println(currUser.toString());
         System.out.println("you are guest");
     }
-
 
 }

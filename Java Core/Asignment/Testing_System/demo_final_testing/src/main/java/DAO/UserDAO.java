@@ -122,8 +122,12 @@ public class UserDAO extends AbsDAO {
                     resultSet.getString("password"),
                     skillList);
 
+            if (resultSet.getString("skill") == null)
+                return user;
+
             skillList.add(resultSet.getString("skill"));
-            while (resultSet.next() && resultSet.getInt("id") == user.getId()) {
+
+            while (resultSet.next() && resultSet.getInt("id") != user.getId()) {
                 ((Employee) user).getProSkill().add(resultSet.getString("skill"));
             }
 
@@ -134,11 +138,17 @@ public class UserDAO extends AbsDAO {
     }
 
     private boolean isAdmin(ResultSet resultSet) throws SQLException {
-        try {
-            return resultSet.getString("skill") == null;
-        } catch (Exception e){
-            return true;
+        ResultSet admins = getConnection().createStatement().executeQuery("select id from `Admin`");
+
+        while (admins.next()){
+            if (admins.getInt("id") == resultSet.getInt("id"))
+                return true;
         }
+
+        return false;
     }
 
+    public static void main(String[] args) {
+        new UserDAO().getUsers().forEach(u -> System.out.println(u));
+    }
 }
