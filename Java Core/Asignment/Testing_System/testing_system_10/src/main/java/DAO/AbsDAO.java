@@ -1,11 +1,11 @@
 package DAO;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.*;
 
-abstract public class AbsDAO {
+public class AbsDAO {
+
     public Connection getCollection() {
-        final String url = "jdbc:mysql://localhost:3306/Testing_System";
+        final String url = "jdbc:mysql://localhost:3306/Accounts";
         final String user = "buicuong";
         final String password = "buicuong";
         Connection conn = null;
@@ -23,7 +23,19 @@ abstract public class AbsDAO {
         return null;
     }
 
-//    public static void main(String[] args) {
-//        System.out.println(new AbsDAO().getCollection());
-//    }
+    public static void main(String[] args) throws SQLException {
+        Connection conn = new AbsDAO().getCollection();
+        System.out.println(conn);
+////        String name = "Dev 1";
+////        String sql = "insert into `Position`(PositionName) values(?)";
+////        PreparedStatement preparedStatement = conn.prepareStatement(sql);
+////        preparedStatement.setString(1,name);
+////        preparedStatement.executeUpdate();
+//        ResultSet resultSet = conn.createStatement().executeQuery("select * from `Position`");
+//
+//        while (resultSet.next()){
+//            System.out.println(resultSet.getString("PositionName"));
+//        }
+//        conn.close();
+    }
 }
