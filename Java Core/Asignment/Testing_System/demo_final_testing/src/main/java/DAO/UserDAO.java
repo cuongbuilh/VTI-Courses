@@ -56,16 +56,16 @@ public class UserDAO extends AbsDAO {
     public void removeUser(int id) throws SQLException {
         Connection connection = getConnection();
         PreparedStatement preparedStatement = null;
-        preparedStatement= connection.prepareStatement(REMOVE_SKILLS_BY_ID);
-        preparedStatement.setInt(1,id);
+        preparedStatement = connection.prepareStatement(REMOVE_SKILLS_BY_ID);
+        preparedStatement.setInt(1, id);
         preparedStatement.executeUpdate();
 
         preparedStatement = connection.prepareStatement(REMOVE_USER_ID);
-        preparedStatement.setInt(1,id);
+        preparedStatement.setInt(1, id);
         preparedStatement.executeUpdate();
     }
 
-    public int getMaxID(){
+    public int getMaxID() {
         String sql = "select max(id) from User";
         try {
             ResultSet resultSet = getConnection().createStatement().executeQuery(sql);
@@ -119,7 +119,6 @@ public class UserDAO extends AbsDAO {
                     resultSet.getString("email"),
                     resultSet.getString("password"),
                     getSkills(resultSet.getInt("id")));
-
 //            while (user.getId() == resultSet.getInt("id")){
 //                resultSet.next();
 //            }
@@ -128,11 +127,10 @@ public class UserDAO extends AbsDAO {
         return user;
     }
 
-
     private boolean isAdmin(ResultSet resultSet) throws SQLException {
         ResultSet admins = getConnection().createStatement().executeQuery("select id from `Admin`");
 
-        while (admins.next()){
+        while (admins.next()) {
             if (admins.getInt("id") == resultSet.getInt("id"))
                 return true;
         }
@@ -143,18 +141,13 @@ public class UserDAO extends AbsDAO {
     private List<String> getSkills(int id) throws SQLException {
         String sql = "select * from Skill where id = ?";
         PreparedStatement preparedStatement = getConnection().prepareStatement(sql);
-        preparedStatement.setInt(1,id);
+        preparedStatement.setInt(1, id);
         ResultSet resultSet = preparedStatement.executeQuery();
 
         List<String> skills = new ArrayList<>();
-        while (resultSet.next()){
+        while (resultSet.next()) {
             skills.add(resultSet.getString("skill"));
         }
         return skills;
     }
-
-    public static void main(String[] args) {
-        new UserDAO().getUsers().forEach(u -> System.out.println(u));
-    }
-
 }

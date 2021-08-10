@@ -14,7 +14,6 @@ public class UserController {
         userService = new UserService();
     }
 
-
     public User login(String email, String password){
         currUser =  userService.login(email,password);
         return currUser;

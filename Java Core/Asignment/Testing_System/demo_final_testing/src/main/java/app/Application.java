@@ -4,6 +4,7 @@ import Controller.UserController;
 import entity.User;
 import jdk.swing.interop.SwingInterOpUtils;
 import service.UserService;
+import utils.MyScanner;
 
 import java.util.List;
 import java.util.Scanner;
@@ -19,7 +20,6 @@ public class Application {
     private final static int SHOW_LIST_USER = 4;
     private final static int LOG_OUT = 9;
     private final static int DEFAULT = Integer.MAX_VALUE;
-
 
     public static void main(String[] args) {
         // declare in_use variable
@@ -62,7 +62,7 @@ public class Application {
 
     public static int inputSelection() throws Exception {
         int choice = DEFAULT;
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new MyScanner().getScanner();
         try {
             System.out.print("enter your choice: ");
             choice = scanner.nextInt();
@@ -97,7 +97,7 @@ public class Application {
     }
 
     private static void login() {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new MyScanner().getScanner();
         System.out.println("Login:");
         System.out.print("email: ");
         String email = sc.next();
@@ -140,7 +140,7 @@ public class Application {
             return;
         }
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new MyScanner().getScanner();
         System.out.println("create user:");
         System.out.print("fullname: ");
         String fullname = sc.nextLine();
