@@ -35,8 +35,7 @@ public class UserService implements IService {
     @Override
     public boolean createUser(String fullname, String email) {
         try {
-            userDAO.createUser(userDAO.getMaxID()+1, fullname, email, "12345", new ArrayList<String>());
-            return true;
+            return userDAO.createUser(userDAO.getMaxID()+1, fullname, email, "12345", new ArrayList<String>());
         } catch (SQLException ignored){
         }
         return false;

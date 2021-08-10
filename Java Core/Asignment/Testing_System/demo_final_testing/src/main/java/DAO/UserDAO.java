@@ -114,28 +114,20 @@ public class UserDAO extends AbsDAO {
                     resultSet.getString("password"),
                     resultSet.getInt("expInYear"));
         } else { // not be an admin
-            List<String> skillList = new ArrayList<>();
-
             user = new Employee(resultSet.getInt("id"),
                     resultSet.getString("fullname"),
                     resultSet.getString("email"),
                     resultSet.getString("password"),
-                    skillList);
+                    getSkills(resultSet.getInt("id")));
 
-            if (resultSet.getString("skill") == null)
-                return user;
-
-            skillList.add(resultSet.getString("skill"));
-
-            while (resultSet.next() && resultSet.getInt("id") != user.getId()) {
-                ((Employee) user).getProSkill().add(resultSet.getString("skill"));
-            }
-
-            ((Employee)user).setProSkill(skillList);
+//            while (user.getId() == resultSet.getInt("id")){
+//                resultSet.next();
+//            }
         }
 
         return user;
     }
+
 
     private boolean isAdmin(ResultSet resultSet) throws SQLException {
         ResultSet admins = getConnection().createStatement().executeQuery("select id from `Admin`");
@@ -146,6 +138,23 @@ public class UserDAO extends AbsDAO {
         }
 
         return false;
+    }
+
+    private List<String> getSkills(int id) throws SQLException {
+        String sql = "select * from Skill where id = ?";
+        PreparedStatement preparedStatement = getConnection().prepareStatement(sql);
+        preparedStatement.setInt(1,id);
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        List<String> skills = new ArrayList<>();
+        while (resultSet.next()){
+            skills.add(resultSet.getString("skill"));
+        }
+        return skills;
+    }
+
+    public static void main(String[] args) {
+        new UserDAO().getUsers().forEach(u -> System.out.println(u));
     }
 
 }
