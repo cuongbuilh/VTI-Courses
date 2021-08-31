@@ -1,4 +1,5 @@
 -- tao database
+use master;
 drop database if exists A_13_DangLienHuong_De1;
 create database A_13_DangLienHuong_De1;
 use A_13_DangLienHuong_De1;
@@ -84,7 +85,11 @@ values (1, 1, '2020-04-04', 100000, 0),
        (2, 2, '2020-04-04', 200000, 0);
 
 -- cau 2
+go
 drop proc if exists sp_add_pt;
+go;
+
+go
 create proc sp_add_pt @mahh int, @makh int, @ngaythang date, @sotientra bigint, @loaipt binary, @ghichu nvarchar(200)
 as
 begin
@@ -100,13 +105,14 @@ begin
         insert into PT(mahh, makh, ngaythang, sotientra, loaipt, ghichu)
         values (@mahh, @mahh, @ngaythang, @sotientra, @loaipt, @ghichu);
 end;
-go
+go;
 
 exec sp_add_pt 12, 12, '2020-12-12', 0, 1, '';
 exec sp_add_pt 1, 1, '2020-12-02', 0, 1, '';
 
 
 -- cau 3
+go
 create or alter view v_bill(makh, tenkh, sotien)
 as
 select kh.makh, hotenkh, sum(giatri)
@@ -114,11 +120,13 @@ from hh,
      kh
 where hh.makh = kh.makh
 group by kh.makh, hotenkh;
+go;
 
 select *
 from v_bill;
 
 -- cau 4
+go
 create proc sp_stats @option int
 as
 begin
@@ -137,7 +145,7 @@ begin
               and loaipt = 1
             group by hh.mahh, tenhh;
 end;
-go
+go;
 
 exec sp_stats 1;
 exec sp_stats 2;
@@ -145,6 +153,8 @@ exec sp_stats 2;
 
 -- cau 5
 drop trigger if exists trg_cau5;
+
+go
 create trigger trg_cau5
     on hh
     after insert as
