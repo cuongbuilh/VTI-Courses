@@ -1,0 +1,16 @@
+body {
+    background-color: aqua !important;
+}
+
+.div-1 {
+    display: flex;
+    width: 9em;
+    height: 100px;
+    justify-content: center;
+    background-color: red;
+    padding: 1rem;
+}
+
+span {
+    display: block;
+}
