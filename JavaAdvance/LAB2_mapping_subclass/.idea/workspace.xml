@@ -4,166 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54c375d6-01c7-4eee-83d9-25389eba21b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/Controller/IControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/DAO/AbsDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/DAO/IDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/DAO/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/app/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/app/Configs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/app/functions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/service/IService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/Login_Demo/src/main/java/utils/MyInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/LAB.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/API/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/controller/ErrorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/entity/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/entity/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/entity/converter/PositionNameConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/entity/enums/PositionName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/repository/IRepository/IAccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/repository/IRepository/IDepartmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/repository/IRepository/IPositionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/repository/hibernate/AbsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/repository/hibernate/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/repository/hibernate/DepartmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/repository/hibernate/PositionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/services/IServices/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/services/IServices/IDepartmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/services/IServices/IPositionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/java/utils/HibernateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/resources/database_script.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB/src/main/resources/view/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LAB2_mapping_subclass.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/DetailDepartment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HibernateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/TestingSystem2.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/.gradle/5.2/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/.gradle/5.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/.gradle/5.2/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/java/org/example/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/java/org/example/components/Layout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/java/org/example/pages/About.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/java/org/example/pages/Error404.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/java/org/example/pages/Index.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/java/org/example/pages/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/java/org/example/services/AppModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/java/org/example/services/DevelopmentModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/java/org/example/services/QaModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/resources/log4j2.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/resources/org/example/components/Layout.tml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/resources/org/example/pages/About.tml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/resources/org/example/pages/Error404.tml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/resources/org/example/pages/Index.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/resources/org/example/pages/Index.tml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/resources/org/example/pages/Login.tml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/WEB-INF/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/images/tapestry.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/affix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/alert.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/collapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/dropdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/popover.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/scrollspy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/tooltip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/main/webapp/mybootstrap/js/transition.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/test/groovy/org/example/IndexSpec.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/test/groovy/org/example/tapestry/functional/LoginSpec.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/test/groovy/org/example/tapestry/unit/pages/LoginSpec.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/test/groovy/org/example/tapestry/unit/pages/NavigationSpec.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../LAB_1/src/test/resources/PLACEHOLDER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.idea/jpa-buddy-datasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.jpb/jpb-settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/.jpb/persistence-units.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/src/main/java/App/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/src/main/java/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/src/main/java/utils/HibernateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testing_1/testing_1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/demo_final_testing/src/main/java/DAO/AbsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/demo_final_testing/src/main/java/DAO/AbsDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/demo_final_testing/target/classes/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/demo_final_testing/target/classes/Controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/demo_final_testing/target/classes/DAO/AbsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/demo_final_testing/target/classes/DAO/AbsDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/demo_final_testing/target/classes/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/demo_final_testing/target/classes/DAO/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/demo_final_testing/target/classes/app/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java Core/Asignment/Testing_System/demo_final_testing/target/classes/app/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SQL/Take Note/A_13_DangLienHuong_De1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../SQL/Take Note/A_13_DangLienHuong_De1.sql" afterDir="false" />
+    <list default="true" id="54c375d6-01c7-4eee-83d9-25389eba21b4" name="Changes" comment="LAB2 Hibernate mapping subclass">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,8 +100,24 @@
       <option name="presentableId" value="Default" />
       <updated>1630400114902</updated>
       <workItem from="1630400118772" duration="793000" />
-      <workItem from="1630420020168" duration="3272000" />
+      <workItem from="1630420020168" duration="3608000" />
+      <workItem from="1630498755869" duration="104000" />
     </task>
+    <task id="LOCAL-00001" summary="LAB2 Hibernate mapping subclass">
+      <created>1630428471996</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1630428471996</updated>
+    </task>
+    <task id="LOCAL-00002" summary="LAB2 Hibernate mapping subclass">
+      <created>1630428518062</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1630428518062</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,5 +137,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="LAB2 Hibernate mapping subclass" />
+    <option name="LAST_COMMIT_MESSAGE" value="LAB2 Hibernate mapping subclass" />
   </component>
 </project>

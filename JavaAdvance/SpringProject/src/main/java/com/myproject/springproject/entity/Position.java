@@ -1,6 +1,11 @@
-package entity;
+package com.myproject.springproject.entity;
 
-import lombok.*;
+
+import com.myproject.springproject.entity.converter.PositionNameConverter;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -21,11 +26,8 @@ public class Position implements Serializable {
 
 
     @Column(name = "PositionName", nullable = false, unique = true)
+    @Convert(converter = PositionNameConverter.class)
     private PositionName name;
-
-    private enum PositionName{
-        Dev,Test,Scrum_Master,PM
-    }
 
 
     @OneToMany(mappedBy = "position")
